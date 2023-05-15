@@ -1,11 +1,16 @@
+# Project info ------------------------------------------------------------
 project(Color)
-
 cmake_minimum_required (VERSION 2.6)
+# -------------------------------------------------------------------------
+# Set (remember to change the path for what you need)
 set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_PREFIX_PATH "E:/dev") #can be removed if install under space locally
+list(APPEND CMAKE_PREFIX_PATH "E:/dev/OpenCV/build") #ccan be removed if install under space locally
+# -------------------------------------------------------------------------
+
 find_package(CGAL QUIET COMPONENTS Core )
 include( ${CGAL_USE_FILE} )
 include_directories(${CGAL_INCLUDE_DIR})
-
 find_package(OpenCV REQUIRED)
 
 add_executable(Color color.cpp)
