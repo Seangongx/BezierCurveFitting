@@ -1,0 +1,36 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe 生成活动文件",
+            "command": "cl.exe",
+            "args": [
+                "/I",
+                "E:\\dev\\CGAL-5.5.1\\include\\",
+                "/I",
+                "E:\\dev\\boost_1_71_0",
+                "/I",
+                "E:\\dev\\OpenCV\\build\\include",
+                "/I",
+                "E:\\dev\\CGAL-5.5.1\\auxiliary\\gmp\\include",
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}

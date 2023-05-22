@@ -10,8 +10,8 @@ Author: Xun Gong(Telecom-paris)
 - Compiling the project using CMake
 
 2. How to run the program?
-- (windows) Copy the libgmp-10.dll to Debug or Release directory of your project, together with the Color.exe 
-- (windows) Executing the Color.exe with a parameter(/YOURPATH/resultfish.png)
+- (windows) Copy the libgmp-10.dll from ...\CGAL-X.X.X\auxiliary\gmp\lib to Debug or Release directory of your project, together with the Color.exe 
+- (windows) Executing the Color.exe with a parameter in terminer(/YOURPATH/resultfish.png)
 
 3. Recommand released version:
 - boost 1.71.0(Aug,2019)
